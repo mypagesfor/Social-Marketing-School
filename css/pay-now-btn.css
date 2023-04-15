@@ -1,0 +1,55 @@
+.my-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pay-now-btn{
+    width: 100%;
+    height: auto;
+    padding: 3vh;
+    font-size: 2em;
+    color: white;
+    background-image: linear-gradient(245deg, rgb(14, 185, 40), rgb(21, 104, 34));
+    border: none;
+    border-radius: 9vh 4vh;
+    animation-name: my-pay-now-anim;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: .1s;
+}
+.pay-now-btn::after{
+    content: "79";
+}
+@media screen and (max-width: 654px) {
+    .pay-now-btn{
+    font-size: 1.5em;
+    padding: 2vh;
+    }
+}
+@media screen and (max-width: 465px) {
+    .pay-now-btn{
+    font-size: 1em;
+    padding: 1.5vh;
+    }
+}
+@media screen and (max-width: 340px) {
+    .pay-now-btn{
+    font-size: 0.7em;
+    padding: 1vh;
+    }
+}
+@keyframes my-pay-now-anim{
+    25%{
+    transform: rotate(4deg);
+    }
+    50%{
+    transform: rotate(0deg);
+    }
+    75%{
+    transform: rotate(-4deg);
+    }
+    100%{
+    transform: rotate(0deg);
+    }
+}
